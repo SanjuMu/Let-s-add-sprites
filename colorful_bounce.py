@@ -36,5 +36,12 @@ class Sprite(pygame.sprite.Sprite):
             pygame.event.post(pygame.event.Event(SPRITE_COLOR_CHANGE_EVENT))
             pygame.event.post(pygame.event.Event(BACKGROUND_COLOR_CHANGE_EVENT))
 
-    def chage_color(self):
-        self.image.fill
+        def chage_color(self):
+            self.image.fill(random.choice[YELLOW, MAGENTA, ORANGE, WHITE])
+
+    def change_background_color():
+        global bg_color
+        bg_color = random.choice([BLUE, LIGHTBLUE, DARKBLUE])
+
+    all_sprite_list = pygame.sprite.Group()
+    sp1 = Sprite (WHITE, 20, 30 )
